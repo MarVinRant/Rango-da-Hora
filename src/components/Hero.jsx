@@ -14,7 +14,7 @@ export default function Hero() {
       
       <div className="flex flex-col items-center -mt-20 relative z-10 px-4 text-center">
         <img 
-          src="https://images.unsplash.com/photo-1606850246029-dd00e5ebad6b?auto=format&fit=crop&w=250&h=250&q=80" 
+          src="./assets/logo.png" 
           alt="Logo Rango da Hora" 
           className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-xl object-cover bg-white"
         />
