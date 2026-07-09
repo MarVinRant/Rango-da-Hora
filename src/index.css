@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de cores do Rango da Hora */
+  --color-brand-caramelo: #D1706A;
+  --color-brand-dourado: #E9A16E;
+  --color-brand-pastel: #F1077A;
+  --color-brand-claro: #FFDC99;
+  
+  /* Fonte amigável */
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
