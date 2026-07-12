@@ -1,36 +1,43 @@
-import { MapPin, Clock } from 'lucide-react';
-import React from 'react';
-// Adicione esta linha abaixo dos outros imports:
-import logoRango from '../assets/Logo-Rango.png';
+import { MapPin, Clock, ArrowDownCircle } from 'lucide-react';
+import logoNovo from '../assets/logo-churrascaria.png'; 
 
 export default function Hero() {
   return (
-    <header className="relative w-full">
-      <div className="w-full h-56 md:h-72 bg-gray-900 relative">
-        <img
-          src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80"
-          alt="Marmitas e panelas"
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-      </div>
-
-      <div className="flex flex-col items-center -mt-20 relative z-10 px-4 text-center">
-        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-xl bg-white flex items-center justify-center overflow-hidden">
+    <header className="relative w-full bg-gradient-to-b from-brand-carvao to-black pt-16 pb-20">
+      <div className="flex flex-col items-center relative z-10 px-4 text-center max-w-4xl mx-auto">
+        
+        {/* Container do Logo com máscara de corte exata */}
+        <div className="w-56 h-56 md:w-64 md:h-64 rounded-full shadow-[0_0_40px_rgba(217,35,35,0.15)] flex items-center justify-center overflow-hidden bg-brand-carvao">
           <img
-            src={logoRango}
-            alt="Logo Rango da Hora"
-            className="w-full h-full object-cover scale-[1.4]"
+            src={logoNovo}
+            alt="Churrascaria da Hora"
+            /* scale para esconder a borda e translate-y para descer a imagem levemente */
+            className="w-full h-full object-cover scale-[1.01] translate-y-[0.8%]" 
           />
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold mt-3 text-gray-900">Rango da Hora</h1>
-        <p className="text-gray-600 mt-1 flex items-center gap-1 text-sm md:text-base">
-          <MapPin size={16} className="text-brand-caramelo" />
-          Av. Carlos Alberto Bastos Machado, 1090 - Grajaú, SP
+        
+        <h1 className="text-3xl md:text-5xl font-bold mt-8 text-brand-claro drop-shadow-md">
+          O Verdadeiro Sabor na Brasa
+        </h1>
+        
+        <p className="text-gray-300 mt-3 flex items-center justify-center gap-2 text-sm md:text-lg font-medium">
+          <MapPin size={20} className="text-brand-fogo" />
+          R. Goiaba Natal, 102 - Vila Natal
         </p>
-        <div className="bg-brand-caramelo text-white px-5 py-1.5 rounded-md mt-3 font-semibold text-sm md:text-base flex items-center gap-2 shadow-sm">
-          <Clock size={16} /> Seg a Sáb - 11:00 às 16:00
+        
+        <div className="bg-brand-fogo/15 text-brand-claro border border-brand-fogo/30 px-6 py-3 rounded-md mt-6 font-bold text-sm md:text-lg flex items-center gap-2 shadow-lg backdrop-blur-sm">
+          <Clock size={20} className="text-brand-brasa" /> 
+          Presencial e Delivery: Seg a Sáb - 11:00 às 16:00
         </div>
+
+        {/* Novo Botão de Ação (Scroll to Menu) */}
+        <a 
+          href="#cardapio"
+          className="mt-8 bg-brand-fogo hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold text-lg flex items-center gap-2 transition-all shadow-[0_4px_15px_rgba(217,35,35,0.4)] hover:scale-105"
+        >
+          Ver Cardápio <ArrowDownCircle size={22} />
+        </a>
+        
       </div>
     </header>
   );

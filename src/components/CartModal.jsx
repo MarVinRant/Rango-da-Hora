@@ -16,7 +16,7 @@ export default function CartModal({
       <div className="bg-white rounded-lg w-full max-w-md max-h-[90vh] overflow-y-auto relative">
         <button 
           onClick={() => setIsModalOpen(false)}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+          className="absolute top-4 right-4 text-gray-500 hover:text-brand-fogo cursor-pointer"
         >
           <X size={24} />
         </button>
@@ -37,7 +37,7 @@ export default function CartModal({
                   </div>
                   <button 
                     onClick={() => removeFromCart(item.id)}
-                    className="text-xs text-gray-500 hover:text-red-500 flex items-center gap-1"
+                    className="text-xs text-gray-500 hover:text-brand-fogo flex items-center gap-1 cursor-pointer"
                   >
                     Remover <Trash2 size={14} />
                   </button>
@@ -49,7 +49,7 @@ export default function CartModal({
                 <input 
                   type="text" 
                   placeholder="Digite seu endereço completo..." 
-                  className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:border-brand-caramelo"
+                  className="w-full border border-gray-300 rounded-md p-2 text-sm focus:outline-none focus:border-brand-fogo"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                 />
@@ -58,13 +58,13 @@ export default function CartModal({
               <div className="flex justify-between items-center mt-6">
                 <button 
                   onClick={() => setIsModalOpen(false)}
-                  className="text-sm text-gray-500 font-semibold"
+                  className="text-sm text-gray-500 hover:text-gray-800 font-semibold cursor-pointer"
                 >
                   Fechar
                 </button>
                 <button 
                   onClick={handleCheckout}
-                  className="bg-[#32CD32] hover:bg-green-600 text-white font-bold py-2 px-6 rounded-md transition-colors"
+                  className="bg-[#32CD32] hover:bg-green-600 text-white font-bold py-2 px-6 rounded-md transition-colors cursor-pointer"
                 >
                   Finalizar pedido
                 </button>

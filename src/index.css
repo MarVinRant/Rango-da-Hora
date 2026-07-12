@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta de cores do Rango da Hora */
-  --color-brand-caramelo: #D1706A;
-  --color-brand-dourado: #E9A16E;
-  --color-brand-pastel: #F1077A;
-  --color-brand-claro: #FFDC99;
+  /* Nova Paleta Churrascaria */
+  --color-brand-fogo: #D92323;    /* Vermelho intenso para botões CTA */
+  --color-brand-brasa: #F28C0F;   /* Laranja para detalhes e ícones */
+  --color-brand-carvao: #1A1A1A;  /* Preto/Cinza muito escuro para fundos */
+  --color-brand-cinza: #2D2D2D;   /* Fundo secundário para seções */
+  --color-brand-claro: #F5F5F5;   /* Off-white para leitura confortável */
   
-  /* Fonte amigável */
   --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

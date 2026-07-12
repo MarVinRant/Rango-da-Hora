@@ -9,7 +9,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {REVIEWS.map(review => (
             <div key={review.id} className="bg-white p-6 rounded-xl shadow-sm relative">
-              <div className="flex text-brand-dourado mb-3">
+              <div className="flex text-brand-brasa mb-3">
                 {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
               </div>
               <p className="text-gray-600 text-sm italic mb-4">"{review.text}"</p>

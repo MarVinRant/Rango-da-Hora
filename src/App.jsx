@@ -10,6 +10,8 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import CartModal from './components/CartModal';
 
+import { generateWhatsAppLink } from './utils/whatsapp';
+
 export default function App() {
   const [cart, setCart] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,15 +37,8 @@ export default function App() {
       return;
     }
     
-    let text = `Olá, Rango da Hora! Quero fazer um pedido:\n\n`;
-    cart.forEach(item => {
-      text += `${item.qty}x ${item.name} - R$ ${(item.price * item.qty).toFixed(2)}\n`;
-    });
-    text += `\n*Total: R$ ${totalCart.toFixed(2)}*`;
-    text += `\n*Endereço:* ${address}`;
-    
-    const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/5511934089228?text=${encodedText}`, '_blank');
+    const link = generateWhatsAppLink(cart, totalCart, address);
+    window.open(link, '_blank');
   };
 
   return (
@@ -59,7 +54,7 @@ export default function App() {
       {totalItems > 0 && (
         <div 
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-0 left-0 w-full bg-brand-caramelo text-white p-4 cursor-pointer hover:bg-red-500 transition-colors z-40 flex justify-center items-center gap-2 font-bold shadow-[0_-4px_6px_rgba(0,0,0,0.1)]"
+          className="fixed bottom-0 left-0 w-full bg-brand-fogo text-white p-4 cursor-pointer hover:bg-red-700 transition-colors z-40 flex justify-center items-center gap-2 font-bold shadow-[0_-4px_6px_rgba(0,0,0,0.1)]"
         >
           ( {totalItems} ) Veja seu carrinho <ShoppingCart size={20} />
         </div>
@@ -67,10 +62,10 @@ export default function App() {
 
       {totalItems === 0 && (
         <a 
-          href="https://wa.me/5511934089228?text=Olá! Gostaria de fazer um pedido." 
+          href="https://wa.me/5511934089228?text=Olá, Churrascaria da Hora! Gostaria de tirar uma dúvida." 
           target="_blank" 
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-105 transition-transform z-30"
+          className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-105 transition-transform z-30 cursor-pointer"
         >
           <Phone size={28} />
         </a>
