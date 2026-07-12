@@ -1,16 +1,107 @@
-# React + Vite
+# 🍛 Rango da Hora
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page desenvolvida para um restaurante de marmitas caseiras, com foco em apresentar o cardápio, fortalecer a presença digital da marca e facilitar o contato com os clientes.
 
-Currently, two official plugins are available:
+> Primeiro projeto comercial desenvolvido para um cliente real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Demonstração
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Site Online:
+https://rango-da-hora.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Funcionalidades
+
+- Landing Page moderna
+- Design totalmente responsivo
+- Cardápio organizado
+- Botão para WhatsApp
+- Informações de contato
+- Seção institucional
+- Interface otimizada para dispositivos móveis
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Vercel
+
+---
+
+## 🎯 Objetivo do projeto
+
+Este projeto foi desenvolvido para colocar em prática conceitos de desenvolvimento Front-end em um cenário real.
+
+Além da programação, o projeto envolveu:
+
+- Levantamento de requisitos
+- Organização das informações
+- Estruturação da experiência do usuário (UX)
+- Responsividade
+- Publicação em produção utilizando Vercel
+
+---
+
+## 💡 Próximas melhorias
+
+- [ ] Painel administrativo
+- [ ] Cadastro dinâmico de pratos
+- [ ] Banco de dados
+- [ ] Integração com API
+- [ ] React.js
+- [ ] Node.js
+- [ ] Sistema de pedidos
+- [ ] Automações com n8n
+- [ ] Inteligência Artificial para atendimento
+
+---
+
+## 👨‍💻 Sobre mim
+
+Meu nome é **Marcos Vinicius Rantigueri**.
+
+Sou estudante de **Análise e Desenvolvimento de Sistemas**, focado em Desenvolvimento Web, Inteligência Artificial e Automações.
+
+Atualmente estudo:
+
+- JavaScript
+- React.js
+- Node.js
+- Engenharia de Prompt
+- n8n
+- Inteligência Artificial
+
+Meu objetivo é construir soluções que realmente ajudem empresas, enquanto evoluo para atuar como Desenvolvedor Full Stack.
+
+---
+
+## 📫 Contato
+
+LinkedIn:
+[(Meu LinkedIn](https://www.linkedin.com/in/marcos-rantigueri/))
+
+Portfólio:
+[(Meu portfólio](https://marvinrant.github.io/Portifolio/))
+
+GitHub:
+https://github.com/MarVinRant
+
+---
+
+## 📈 Minha evolução
+
+Este é um dos primeiros projetos comerciais do meu portfólio.
+
+Meu objetivo é evoluir este projeto conforme avanço nos estudos, transformando uma Landing Page em uma plataforma completa para restaurantes, utilizando tecnologias como React, Node.js, banco de dados, APIs, automações com n8n e Inteligência Artificial.
+
+Assim, este repositório representa não apenas um projeto finalizado, mas também minha evolução como desenvolvedor.
+
+⭐ Se gostou do projeto, deixe uma estrela no repositório.
